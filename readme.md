@@ -32,3 +32,14 @@ form_2下映射到DASP-10分类方法：
 - Unchecked-Send -> Unchecked Low Level Calls
 - Unhandled-Exceptions -> Other
 - tx.origin -> Access Control
+
+## 指令
+- 查找文件数目
+  - 递归统计所有文件
+    ```
+    find . -type f -name "*.sol" | wc -l
+    ```
+  - 当前目录
+    ```
+    find . -maxdepth 1 -type f -name "*.sol" | wc -l
+    ```
