@@ -1,3 +1,5 @@
+# DataSet
+## 数据说明
 - 数据源
   - smartbugs-curated数据，它的目录就是按漏洞分类组织 DASP-10
 
@@ -17,6 +19,16 @@
     | ----------- | ----------- |
     | Paragraph   | Text        |
 
-----
-- etherscan.io合约不一定有漏洞
-- 合约版本低，都在0.4左右
+- ⚠️注：
+  - etherscan.io合约不一定有漏洞
+  - 合约版本低，都在0.4左右
+
+## 类型映射
+form_2下映射到DASP-10分类方法：
+- Overflow-Underflow -> Arithmetic
+- Re-entrancy -> Reentrancy
+- TOD (Transaction-Ordering Dependence) -> Front Running
+- Timestamp-Dependency -> Time Manipulation
+- Unchecked-Send -> Unchecked Low Level Calls
+- Unhandled-Exceptions -> Other
+- tx.origin -> Access Control
