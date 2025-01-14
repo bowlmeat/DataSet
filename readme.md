@@ -43,3 +43,5 @@ form_2下映射到DASP-10分类方法：
     ```
     find . -maxdepth 1 -type f -name "*.sol" | wc -l
     ```
+  - solidity文件数目情况
+    `form_1`: 212, `form_2`: 350 
